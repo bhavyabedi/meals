@@ -1,24 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:meals/screens/CategoriesSceen.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meals/data/data.dart';
+import 'package:meals/screens/CategoriesSceen.dart';
+import 'package:meals/screens/MealsScreen.dart';
+
+final theme = ThemeData(
+  useMaterial3: true,
+  colorScheme: ColorScheme.fromSeed(
+    brightness: Brightness.dark,
+    seedColor: const Color.fromARGB(255, 131, 57, 0),
+  ),
+  textTheme: GoogleFonts.alegreyaScTextTheme(),
+);
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        textTheme: GoogleFonts.latoTextTheme(),
-        useMaterial3: true,
-      ),
+      theme: theme,
       home: const CategoriesScreen(),
     );
   }
