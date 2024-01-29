@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meals/data/data.dart';
 import 'package:meals/screens/CategoriesSceen.dart';
-import 'package:meals/screens/MealsScreen.dart';
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -10,7 +8,7 @@ final theme = ThemeData(
     brightness: Brightness.dark,
     seedColor: const Color.fromARGB(255, 131, 57, 0),
   ),
-  textTheme: GoogleFonts.alegreyaScTextTheme(),
+  textTheme: GoogleFonts.fanwoodTextTextTheme(),
 );
 
 void main() {
