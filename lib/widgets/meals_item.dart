@@ -54,8 +54,8 @@ class MealItem extends StatelessWidget {
                           .ellipsis, //puts ... in the end of overflows
                       softWrap: true,
                     ),
-                    Row(
-                      children: [Text('details')],
+                    const Row(
+                      children: [],
                     )
                   ],
                 ),

@@ -47,13 +47,13 @@ class SideBar extends StatelessWidget {
               color: Theme.of(context).colorScheme.onBackground,
             ),
             title: Text(
-              'Meals',
+              'Home',
               style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   fontSize: 22,
                   color: Theme.of(context).colorScheme.onBackground),
             ),
             onTap: () {
-              onSelect('Meals');
+              onSelect('Home');
             },
           ),
           ListTile(
