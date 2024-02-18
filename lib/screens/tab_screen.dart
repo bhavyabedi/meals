@@ -4,7 +4,7 @@ import 'package:meals/screens/categories_screen.dart';
 import 'package:meals/screens/filters.dart';
 import 'package:meals/screens/meals_screen.dart';
 import 'package:meals/widgets/side_bar.dart';
-import 'package:meals/provider/favourite_meals.dart';
+import 'package:meals/provider/favourite_meals_provider.dart';
 import 'package:meals/provider/filters_provider.dart';
 
 final Map<Filter, bool> kInit = {
